@@ -1,0 +1,2 @@
+global.music = true;
+
