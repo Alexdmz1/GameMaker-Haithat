@@ -1,0 +1,41 @@
+Realizado ---> buscar una manera más fácil de aumentar el valor de la potion en 1 realizado en el evento step del objeto obj_game.
+
+Realizado ---> mejorar disparos laser.
+
+Realizado ---> lograr invisibilidad o protector.
+
+Realizado ---> check point.
+
+Realizado ---> score y score final.
+
+Realizado ---> agregar enemigos para poder generar un mayor score.
+
+Realizado ---> barra de vida de villanos o jefe.
+
+Realizado ---> mejorar velocidad del room (probablemete se arregle cambiando la velidad del player o room o camara). 
+
+Realizado ---> velocidad de los enemigos.
+
+Realizado ---> puntuacion con laser y shuriken.
+ 
+Realizado ---> creacion de enemigos al morir enemigos --. susttituido por fuente de enemys.
+ 
+Realizado ---> veririficar muerte de enemigos con shuriken.
+ 
+Realizado ---> REVISAR PORQUE SE DESTRUYE ENEMY3 CON LA SSHURIKEN!!!!!!!!!
+
+Realizado ---> checar score con rasho laser.
+
+Realizado ---> mejorar health.
+
+Realizado ---> highscore.
+
+Realizado ---> poner highscore en el room de juego.
+
+Realizado ---> (no era asi)crear el efecto humo cuando elimino eenemigo checarlo en bullet utilizando with (other).
+
+Realizado ---> !!!!!!buscar error que aparece del laser!!!!!!!!!
+
+Realizado ---> Crear botones para win y game over. 
+
+Realizado ---> dibujar puntuacion cada que se elimina un enemigo

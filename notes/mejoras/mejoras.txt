@@ -1,0 +1,57 @@
+Crear jefe gigante y pocima para agigantar el player implica crear terremoto.
+
+Agregar dialogo en los rooms. realizado una  parte
+
+Barrerse.
+
+Pegarse a la pared.
+
+Agregar enemigos que se muevan verticalmente que avienten balas. +
+
+Mejorar cambio de rooms o niveles. ----> realizado
+
+Agregar timelines ++++
+
+Sequences mejorarlas. ++
+
+Mejorar el room_restart. --> realizado
+
+Buscar como manejar la mascara de colison quitar y poner.
+ 
+Componer musica rm_game1.++
+ 
+Cambiar musica de rm_game1 a rm_gameover. ++
+ 
+Pausar al morir.
+ 
+Agregar luz que siga al player.
+ 
+Crear fuente powerups. ++
+
+Pausar el juego. +++ ---> realizado
+
+---> realizado Posima rellene barra de vida. (crear dialogo opcional) ++
+
+Cambiar color del jefe cuando colisiona con una  bala.
+
+!!!!!! COMENTAR TODO LSO CODIGOS CON #REGION !!!!! +++
+
+Poner letras chinas de fondo en room
+
+Quitar estado solido al objeto para que el player caiga (se desmorone como arena el block)
+
+Verificar si es necesario tener la posion en 0 cuando reiniciamos el room al terminar el tiempo ---> realizado
+
+Mejorar forma de hacer caja texto. realizado -->
+
+Borrar fondo del room del que no es. ----> realizado
+
+color r = 100 para creador de enemigo amarillo
+
+arreglar el audio al cambiar al rm_game1 ---> realizado
+
+historia imagenes caricaturisarlas
+
+cambio de sprite al disparar mejorar
+
+CAMBIAR ROOM
