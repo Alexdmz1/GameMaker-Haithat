@@ -1,6 +1,6 @@
 /// @description Scores and lives
-//draw_texture_flush();
-
+draw_texture_flush();
+//show_debug_overlay(true)
 //sprite_prefetch();
 global.health_rovot =100;
 global.numSpawnX=0;
@@ -9,9 +9,15 @@ global.potion =0;
 lives = 3;
 global.time = 300;
 score = 0;
-name = get_string_async("Please enter your name","");
+//escribir =false;
+//global.name = get_string_async("Please enter your name","");
+//
+//global.highscore = 0;
+global.arreglo[0][0]= "";
+global.arreglo[1][0]= score;
 
 // high score rm_game rm_game1
+
 if file_exists("score.ini")
 {
 	ini_open("score.ini");

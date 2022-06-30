@@ -9,3 +9,5 @@ with(obj_game){
 repeat(10){
 	instance_create_layer(x,y,"Instances",obj_debris);
 }
+
+;

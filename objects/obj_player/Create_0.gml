@@ -36,3 +36,8 @@ guns = -1;
 invincible = false;
 
 global.health_rovot= 100;
+
+
+buffer = buffer_create(10000000,buffer_fixed,1);
+
+show_debug_message("player creado");

@@ -19,7 +19,7 @@ if(keyboard_check(vk_enter)){
 #endregion
 
 #region// reiniciar highscore
-if keyboard_check(vk_space){
+if keyboard_check(vk_down){
 	switch(room){
 		
 		case rm_win:		
@@ -56,10 +56,11 @@ if((room== rm_game or room == rm_game0 or room == rm_game00 or room == rm_game1)
 if (room==rm_game or room==rm_game1 or room ==rm_game0 or room ==rm_game00){
 	
 
-	
+	keyboard_string="";
 	if (score > global.highscore)
 	{
 		global.highscore = score ;
+		
 		ini_open("score.ini");
 		ini_write_real("score","highscore",global.highscore);
 		ini_close();
@@ -68,18 +69,27 @@ if (room==rm_game or room==rm_game1 or room ==rm_game0 or room ==rm_game00){
 	else
 	{
 		global.highscore = global.highscore;
+		
 	
 	}
-		
-	
-	if(lives <= 0){
-		
-		highscore_add(name,score);
-		instance_destroy(obj_player);
-		room_goto(rm_gameover);
 
-	}
+	if(lives <= 0){
+		instance_destroy(obj_player);
+		//effect_create_below(ef_smokeup,x+200,y+200,300,c_black);
+		//if(instance_number(obj_player<=0))alarm[3]= 2*room_speed;
+
+		
+		room_goto(rm_gameover);
+		
+		//highscore_add(name,score);
+
+	}//else room_goto(rm_gameover);
+
+		
+	
+
 }
+
 #endregion
 
 #region// rm_game1 highscore, potion, cambio de room a rm_win, time
@@ -92,9 +102,9 @@ if(room == rm_game1){
 
 	
 	if(instance_number(obj_potion) <= 0){
-	
-		highscore_add(name,score);
+		
 		room_goto(rm_win);
+		//highscore_add(name,score);
 		
 
 		
@@ -103,6 +113,16 @@ if(room == rm_game1){
 }
 
 #endregion
+
+if(room==rm_win or room==rm_gameover){
+	
+	if string_length(keyboard_string) > 15
+	{
+		keyboard_string = string_copy(keyboard_string, 1, 15);
+	}
+	
+}
+
 
 
 

@@ -21,10 +21,25 @@ if texto == "Quit"
 	
 }
 
-if texto == "Restart"
+if texto == "Guardar y reiniciar"
 {
-	game_restart();
-	audio_stop_sound(snd_game_over);
+
+	
+
+	array_insert(global.arreglo[0],0,keyboard_string);
+	array_insert(global.arreglo[1],0,string(global.highscore)); // probando score en forma de arreglo
+	keyboard_string = "";
+	highscore_add(global.arreglo[0][0],global.arreglo[1][0]);
+	score=0;
+	array_sort(global.arreglo[1], function(elm1, elm2) //mejorar el orden del arrglo
+	{
+	return elm2 - elm1;
+	});	
+	alarm[0] = 1*room_speed;
+	
+
+
+
 
 }
 

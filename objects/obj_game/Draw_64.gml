@@ -65,16 +65,20 @@ switch(room){
 		var c = c_lime;
 		var r = c_red;
 		draw_text_transformed_color(
-			room_width/2,100, "YOU WIN",
+			(room_width/2)-50,70, "YOU WIN",
 			3,3,0,c,c,c,c,1		
 		);
 		draw_text_transformed_color(
-			room_width/2,250,
-			"Press SPACE to clear high score ",
-			1,1,0,r,r,r,r,1	
+			(room_width/2)-50,325,
+			"Press DOWN to clear high score ",
+			1,1,0,c,r,c,r,1	
 		);
-		draw_set_color(r);
-		draw_highscore(250,300,500,500);
+		draw_set_color(c);
+		draw_text(x+310,y+10,string("Escribe tu  nombre:"));
+		draw_text(x+460,y+10,string(keyboard_string));
+		draw_text(x+310,y+40,string("score:  ") + string(score));
+		draw_rectangle(x+150,y+50,x+500,y+350,c_navy);
+		draw_highscore(x+250,y+100,x+440,y+300);
 		draw_set_halign(fa_left);	
 		break;
 	
@@ -83,17 +87,21 @@ switch(room){
 		draw_set_halign(fa_center);
 		var r = c_red;
 		draw_text_transformed_color(
-			room_width/2,150, "GAME OVER",
+			room_width/2,70, "GAME OVER",
 			3,3,0,r,r,r,r,1		
 		);
 		draw_text_transformed_color(
-			room_width/2,250,
-			"Press SPACE to clear high score ",
+			room_width/2,300,
+			"Press DOWN to clear high score ",
 			1,1,0,r,r,r,r,1	
 		);		
 
 		draw_set_color(r);
-		draw_highscore(250,300,500,500);
+		draw_text(x+400,y+10,string("Escribe tu  nombre:"));
+		draw_text(x+550,y+10,string(keyboard_string));
+		draw_text(x+400,y+40,string("score:  ") + string(score));
+		draw_rectangle(x+200,y+50,x+550,y+350,c_navy);
+		draw_highscore(x+250,y+100,x+500,y+300);
 		draw_set_halign(fa_left);	
 		break;
 		

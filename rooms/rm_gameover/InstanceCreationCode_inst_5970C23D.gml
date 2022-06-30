@@ -1,1 +1,1 @@
-texto = "Restart"
+texto = "Guardar y reiniciar";
